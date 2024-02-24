@@ -1,0 +1,8 @@
+.footer {
+  background-color: #efefef;
+  border-radius: var(--border-radius);
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,52 @@
+.promo-banner {
+  height: 3rem;
+  border-radius: var(--border-radius);
+  background-color: var(--mine-shaft);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.promo-banner-content:first-child {
+  animation: slideRight 16s linear infinite;
+  animation-delay: -16s;
+}
+
+.promo-banner-content:last-child {
+  animation: slideRight2 16s linear infinite;
+  animation-delay: -8s;
+}
+
+.promo-banner-content {
+  display: flex;
+}
+
+.promo-banner-content p {
+  margin: 0;
+  color: var(--white);
+  font-weight: 600;
+  white-space: nowrap;
+  margin-right: 5rem;
+  animation: fade-in 0.6s 1;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(100%); /* Move off-screen right */
+  }
+  100% {
+    transform: translateX(-100%); /* Move off-screen left */
+  }
+}
+
+
+@keyframes slideRight2 {
+  0% {
+    transform: translateX(0%); /* Move off-screen right */
+  }
+  100% {
+    transform: translateX(-200%); /* Move off-screen left */
+  }
+}

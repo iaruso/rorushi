@@ -1,0 +1,33 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-logo {
+  font-family: HansonBold;
+  letter-spacing: var(--letter-spacing);
+  font-size: 3rem;
+  color: var(--mine-shaft);
+}
+
+.navbar-links {
+  font-family: HansonBold;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: var(--spacing);
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: var(--mine-shaft);
+  letter-spacing: var(--letter-spacing-sm);
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar-links a:hover, .navbar-links a.active {
+  color: var(--christine);
+  transform: rotate(-1deg);
+}
