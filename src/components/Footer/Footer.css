@@ -1,8 +1,51 @@
 .footer {
-  background-color: #efefef;
   border-radius: var(--border-radius);
-  height: 3rem;
+  min-height: 4rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  font-family: HansonBold;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+.footer-social-media {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing);
+}
+
+.footer-social-media-btn {
+  height: 3rem;
+  width: 3rem;
+  border-radius: var(--border-radius);
+  background-color: #efefef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social-media-btn svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.footer-social-media {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: var(--spacing);
+}
+
+.footer a, .footer span {
+  text-decoration: none;
+  color: var(--mine-shaft);
+  letter-spacing: var(--letter-spacing-sm);
+  transition: all 0.2s ease-in-out;
+}
+
+.footer a:hover, .footer span:hover {
+  cursor: pointer;
+  color: var(--christine);
+  transform: rotate(-1deg);
 }
