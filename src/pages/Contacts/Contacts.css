@@ -1,10 +1,16 @@
 .contacts-section {
   height: 100%;
-  background-color: var(--alabaster);
-  border-radius: var(--border-radius);
-  padding: var(--spacing);
   display: flex;
   flex-direction: column;
   gap: var(--spacing);
   overflow-y: auto;
+}
+
+.contacts-cover {
+  width: 100%;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  animation: image-color 0.6s 1;
+  flex: 1;
+  height: 0;
 }

@@ -12,14 +12,16 @@
   --letter-spacing-sm: 0.05rem;
   /* Colors */
   
-  --mine-shaft: #202020;
-  --tundora: #404040;
+  --mine-shaft: #080808;
+  --tundora: #323232;
+  --gallery: #EEEEEE;
   --alabaster: #FCFCFC;
   --white: #FFFFFF;
 
   --christine: #F5640B;
   /* Borders */
-  --border-radius: 0.25rem; 
+  --border-radius: 0.25rem;
+  --border-size: 0.05rem;
 }
 
 * {
@@ -53,6 +55,16 @@ body {
     opacity: 0;
   } 100% {
     opacity: 1;
+  }
+}
+
+
+@keyframes image-color {
+  0% {
+    filter: grayscale(1);
+  }
+  100% {
+    filter: grayscale(0);
   }
 }
 

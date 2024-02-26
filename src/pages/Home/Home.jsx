@@ -21,9 +21,7 @@ const DetailsCard = ({ titlePath, pricePath, timePath, drinksPath, agePath, deta
 function Home(){
   return (
     <div className='home-section'>
-      
-      <img className='home-cover' src='./src/assets/images/makiro_cover.jpg'/>
-      
+      <img className='home-cover' src='./src/assets/images/makiro_main_cover.jpg'/>
       <Banner/>
       <div className='home-content'>
         <div className='home-info'>
@@ -55,7 +53,6 @@ function Home(){
           </div>
           <div className='home-contact'>
             <a href='#'><Translator path='home.reservation'/></a>
-            {/* <a href='tel:+351237777777'>(+351) 237 777 777</a> */}
           </div>
           {/* <div className='home-address'>
             <h2><Translator path='home.location'/></h2>
