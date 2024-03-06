@@ -12,13 +12,20 @@
   --letter-spacing-sm: 0.05rem;
   /* Colors */
   
-  --mine-shaft: #080808;
-  --tundora: #323232;
+  --mine-shaft: #252729;
+  --tundora: #33373C;
+  --chalice: #AAAAAA;
+  --silver: #CCCCCC;
   --gallery: #EEEEEE;
   --alabaster: #FCFCFC;
   --white: #FFFFFF;
 
   --christine: #F5640B;
+  /* Font sizes */
+  --font-size-xl: 1.25rem;
+  --font-size-l: 1.125rem;
+  --font-size-m: 1rem;
+  --font-size-sm: 0.875rem;
   /* Borders */
   --border-radius: 0.25rem;
   --border-size: 0.05rem;
@@ -31,9 +38,11 @@
 body {
   padding: var(--spacing);
   margin: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100dvw;
+  height: 100dvh;
   display: flex;
+  background-color: #fcfdfd;
+  overflow: hidden;
 }
 
 #root {
@@ -47,7 +56,7 @@ body {
 
 .app {
   flex: 1;
-  max-height: calc(100vh - 12rem);
+  height: calc(100vh - 12rem);
 }
 
 @keyframes fade-in {
@@ -68,136 +77,64 @@ body {
   }
 }
 
-@media screen and (min-width: 1921px) and (max-width: 3840px) {
+@media screen and (min-width: 1921px) {
   :root {
-    font-size: calc(16px + (20 - 16) * (100vw - 1920px) / (3840 - 1920))
+    font-size: calc(16px + (20 - 16) * (100vw - 1920px) / (3840 - 1920));
+  }
+  #root {
+    width: calc(50vw - calc(2 * var(--spacing)));
   }
 }
 
 @media screen and (min-width: 1441px) and (max-width: 1920px){
   :root {
-    font-size: calc(14px + (16 - 14) * (100vw - 1440px) / (1920 - 1440))
+    font-size: calc(14px + (16 - 14) * (100vw - 1440px) / (1920 - 1440));
   }
 }
 
 @media screen and (min-width: 1081px) and (max-width: 1440px) {
-  #root {
+  :root {
     font-size: calc(12px + (14 - 12) * (100vw - 1080px) / (1440 - 1080));
+  }
+  #root {
+    width: 70vw;
   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1080px) {
-  #root {
+  :root {
     font-size: calc(12px + (12 - 10) * (100vw - 768px) / (1080 - 768));
+  }
+
+  #root {
     width: 90vw;
   }
 }
 
 @media (max-width: 768px) {
+  :root {
+    --font-size-xl: 1rem;
+    --font-size-l: 0.875rem;
+    --font-size-m: 0.75rem;
+    --font-size-sm: 0.625rem;
+  }
   #root {
-    width: calc(100% - calc(2 * var(--spacing)));
+    width: 100%;
     max-width: unset;
   }
-}
-/*:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
+  #root > footer {
+    display: none;
   }
 }
 
-
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (min-width: 769px) {
+  .app {
+    min-height: fit-content;
   }
 }
 
+/*
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;

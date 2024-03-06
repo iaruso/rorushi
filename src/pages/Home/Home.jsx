@@ -3,18 +3,25 @@ import './Home.css';
 import Translator from '../../i18n/Translator.js';
 import Banner from '../../components/Banner/Banner.jsx';
 
-const DetailsCard = ({ titlePath, pricePath, timePath, drinksPath, agePath, detailsPath }) => (
-  <div className='home-details-card'>
-    <div className='home-details-card-header'>
+const PricingCard = ({ titlePath, pricePath, timePath, drinksPath, agePath, detailsPath }) => (
+  <div className='home-pricing-card'>
+    <div className='home-pricing-card-header'>
       <p><Translator path={titlePath}/></p>
       <p><Translator path={pricePath}/></p>
     </div>
-    <div className='home-details-card-footer'>
+    <div className='home-pricing-card-footer'>
       {agePath && <span><Translator path={agePath}/></span>}
       {timePath && <span><Translator path={timePath}/></span>}
       {detailsPath && <span><Translator path={detailsPath}/></span>}
       <span><Translator path={drinksPath}/></span>
     </div>
+  </div>
+);
+
+const DetailsCard = ({ titlePath, descriptionPath }) => (
+  <div className='home-details-card'>
+    <h2><Translator path={titlePath}/></h2>
+    <p><Translator path={descriptionPath}/></p>
   </div>
 );
 
@@ -24,47 +31,51 @@ function Home(){
       <img className='home-cover' src='./src/assets/images/makiro_main_cover.jpg'/>
       <Banner/>
       <div className='home-content'>
+        <div className='home-options'>
+          <DetailsCard
+            titlePath='home.details.quality.title'
+            descriptionPath='home.details.quality.description'
+          />
+          <DetailsCard
+            titlePath='home.details.service.title'
+            descriptionPath='home.details.service.description'
+          />
+          <DetailsCard
+            titlePath='home.details.environment.title'
+            descriptionPath='home.details.environment.description'
+          />
+        </div>
         <div className='home-info'>
-          <div className='home-details'>
-            <DetailsCard
-              titlePath='home.details.lunch.title'
-              pricePath='home.details.lunch.price'
-              timePath='home.details.lunch.time'
-              drinksPath='home.details.lunch.drinks'
+          <div className='home-pricing'>
+            <PricingCard
+              titlePath='home.pricing.lunch.title'
+              pricePath='home.pricing.lunch.price'
+              timePath='home.pricing.lunch.time'
+              drinksPath='home.pricing.lunch.drinks'
             />
-            <DetailsCard
-              titlePath='home.details.dinner.title'
-              pricePath='home.details.dinner.price'
-              timePath='home.details.dinner.time'
-              drinksPath='home.details.dinner.drinks'
+            <PricingCard
+              titlePath='home.pricing.dinner.title'
+              pricePath='home.pricing.dinner.price'
+              timePath='home.pricing.dinner.time'
+              drinksPath='home.pricing.dinner.drinks'
             />
-            <DetailsCard
-              titlePath='home.details.kids.title'
-              pricePath='home.details.kids.price'
-              drinksPath='home.details.kids.drinks'
-              agePath='home.details.kids.age'
+            <PricingCard
+              titlePath='home.pricing.kids.title'
+              pricePath='home.pricing.kids.price'
+              drinksPath='home.pricing.kids.drinks'
+              agePath='home.pricing.kids.age'
             />
-            <DetailsCard
-              titlePath='home.details.takeaway.title'
-              pricePath='home.details.takeaway.price'
-              drinksPath='home.details.takeaway.drinks'
-              detailsPath='home.details.takeaway.details'
+            <PricingCard
+              titlePath='home.pricing.takeaway.title'
+              pricePath='home.pricing.takeaway.price'
+              drinksPath='home.pricing.takeaway.drinks'
+              detailsPath='home.pricing.takeaway.details'
             />
           </div>
-          <div className='home-contact'>
-            <a href='#'><Translator path='home.reservation'/></a>
-          </div>
-          {/* <div className='home-address'>
-            <h2><Translator path='home.location'/></h2>
-            <p>Rua do Almada, 154</p>
-            <p>4000-196 Porto</p>
-          </div> */}
         </div>
-        <div className='home-about'>
-          <p><Translator path='home.about.intro'/></p>
-          <p><Translator path='home.about.description'/></p>
-          <img src='./src/assets/images/makiro_chef.jpg'/>
-        </div>
+      </div>
+      <div className='home-contact'>
+        <a href='#'><Translator path='home.reservation'/></a>
       </div>
     </div>
   );

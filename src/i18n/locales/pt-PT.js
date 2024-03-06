@@ -17,36 +17,46 @@ export default {
 			terms: 'Termos e condições'
 		},
 		home: {
-			location: "Localização",
-			about: {
-				intro: 'Localizado no centro do Porto, o nosso restaurante é um paraíso para os amantes de sushi.',
-				description: 'Delicie-se com a nossa experiência gastronómica "all-you-can-eat", que oferece uma variedade de opções meticulosamente elaboradas pelo chefe japonês, Takashi Yamamoto, com mais de 30 anos de experiência.'
-			},
-			reservation: "Faça uma reserva",
+			menu: 'Explore o menu',
+			reservation: 'Reserve uma mesa',
 			details: {
+				quality: {
+					title: 'Qualidade',
+					description: 'Desfrute de sushi fresco preparado pelo chef com mais de 30 anos de experiência.'
+				},
+				service: {
+					title: 'Serviço',
+					description: 'Desfrute de uma refeição rodízio ou faça uma encomenda para levar para casa.'
+				},
+				environment: {
+					title: 'Ambiente',
+					description: 'Ajude-nos a reduzir o desperdício (0,50€ por cada peça desperdiçada).'
+				}
+			},
+			pricing: {
 				lunch: {
-					title: "Almoço",
-					time: "12:00 - 15:00",
-					price: "15€",
-					drinks: "(bebidas incluídas)"
+					title: 'Almoço',
+					time: '12:00 - 15:00',
+					price: '15€',
+					drinks: '(bebidas incluídas)'
 				},
 				dinner: {
-					title: "Jantar",
-					time: "20:00 - 23:00",
-					price: "20€",
-					drinks: "(bebidas não incluídas)"
+					title: 'Jantar',
+					time: '20:00 - 23:00',
+					price: '20€',
+					drinks: '(bebidas não incluídas)'
 				},
 				kids: {
-					title: "Crianças",
-					age: "(Menos de 12)",
-					price: "8€",
-					drinks: "(bebidas não incluídas)"
+					title: 'Crianças',
+					age: '(Menos de 12)',
+					price: '8€',
+					drinks: '(bebidas não incluídas)'
 				},
 				takeaway: {
-					title: "Take away",
-					details: "(16 peças)",
-					price: "10€",
-					drinks: "(bebidas não incluídas)"
+					title: 'Take away',
+					details: '(16 peças)',
+					price: '10€',
+					drinks: '(bebidas não incluídas)'
 				}
 			}
 		},
@@ -55,25 +65,31 @@ export default {
 		},
 		services: {
 			reservation: {
-				title: "Reserva",
-				description: "Reserve uma mesa no nosso restaurante." 
+				title: 'Reserva',
+				description: 'Reserve uma mesa no nosso restaurante.' 
 			},
 			delivery: {
-				title: "Encomenda",
-				description: "Faça encomenda à sua casa.",
-				status: "Serviço indisponível"
+				title: 'Encomenda',
+				description: 'Faça encomenda à sua casa.',
+				status: 'Indisponível'
 			},
 			partner: {
-				title: "Serviços de entrega",
-				description: "Faça a sua encomenda numa das seguintes aplicações."
+				title: 'Serviços de entrega',
+				description: 'Faça a sua encomenda numa das aplicações de entrega.'
 			},
 			takeaway: {
-				title: "Take away",
-				description: "Contacte-nos e recolha a sua encomenda."
+				title: 'Take away',
+				description: 'Contacte-nos e recolha a sua encomenda.'
 			}
 		},
 		contacts: {
-
+			address: 'Morada',
+			phone: 'Contacto telefónico',
+			opening_hours: 'Horário de funcionamento',
+			details: {
+				days: 'Todos os dias das 12:00 às 15:00 e 20:00 às 23:00.',
+				services: 'Serviço de entrega todos os dias das 12:30 às 15:00 e 20:00 às 22:30.'
+			}
 		}
   }
 }

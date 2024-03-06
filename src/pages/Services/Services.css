@@ -13,6 +13,16 @@
   animation: image-color 0.6s 1;
   flex: 1;
   height: 0;
+  border: 0.05rem solid #E4D7C7;
+  object-position: bottom left;
+}
+
+.services-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: var(--spacing);
+  grid-row-gap: var(--spacing);
 }
 
 .services-card {
@@ -23,9 +33,20 @@
   gap: var(--spacing);
   padding: var(--spacing);
   border: var(--gallery) solid var(--border-size);
+  text-decoration: none;
 }
 
-.services-card-header h2 {
+.services-card.reservation-card, .services-card.contact-card {
+  background-color: var(--christine);
+  border: #ce5205 solid var(--border-size);
+}
+
+.services-card.reservation-card h2, .services-card.reservation-card p,
+.services-card.contact-card h2, .services-card.contact-card p {
+  color: var(--white);
+}
+
+.services-card-header h2, .services-card-status {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 1.25rem;
@@ -36,6 +57,22 @@
 .services-card-footer {
   display: flex;
   justify-content: space-between;
+}
+
+.services-card.unavailable {
+  position: relative;
+  background-color: var(--gallery);
+  border-color: var(--silver);
+}
+
+.services-card.unavailable p, .services-card.unavailable span, .services-card.unavailable h2 {
+  color: var(--chalice);
+}
+
+.services-card-status {
+  position: absolute;
+  right: var(--spacing);
+  top: var(--spacing);
 }
 
 .services-card-footer p {
@@ -51,4 +88,20 @@
   font-weight: 600;
   font-size: 1rem;
   color: var(--tundora);
+}
+
+@media screen and (max-width: 768px) {
+  .services-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing);
+  }
+
+  .services-card.reservation-card {
+    order: 2;
+  }
+
+  .services-card.contact-card {
+    order: 1;
+  }
 }
