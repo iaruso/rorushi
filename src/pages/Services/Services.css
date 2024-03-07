@@ -15,6 +15,7 @@
   height: 0;
   border: 0.05rem solid #E4D7C7;
   object-position: bottom left;
+  min-height: 15rem;
 }
 
 .services-content {
@@ -34,11 +35,16 @@
   padding: var(--spacing);
   border: var(--gallery) solid var(--border-size);
   text-decoration: none;
+  transition: background-color 0.4s ease-in-out;
 }
 
 .services-card.reservation-card, .services-card.contact-card {
   background-color: var(--christine);
   border: #ce5205 solid var(--border-size);
+}
+
+.services-card.reservation-card:hover, .services-card.contact-card:hover {
+  background-color: var(--meteor);
 }
 
 .services-card.reservation-card h2, .services-card.reservation-card p,
@@ -49,7 +55,7 @@
 .services-card-header h2, .services-card-status {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 1.25rem;
+  font-size: var(--font-size-xl);
   color: var(--mine-shaft);
   margin: 0;
 }
@@ -78,7 +84,7 @@
 .services-card-footer p {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 1.125rem;
+  font-size: var(--font-size-l);
   color: var(--tundora);
   margin: 0;
 }
@@ -86,11 +92,21 @@
 .services-card-footer span {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: var(--font-size-m);
   color: var(--tundora);
 }
 
 @media screen and (max-width: 768px) {
+  .services-section {
+    position: relative;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .services-section::-webkit-scrollbar {
+    display: none
+  }
+
   .services-content {
     display: flex;
     flex-direction: column;

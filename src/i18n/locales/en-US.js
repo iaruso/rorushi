@@ -88,7 +88,7 @@ export default {
 			opening_hours: 'Opening hours',
 			details: {
 				days: 'Every day from 12pm to 3pm and 8pm to 11pm.',
-				services: 'Delivery service every day from 12:30pm to 3pm and 8pm to 10:30pm.'
+				services: 'Take away every day from 12:30pm to 3pm and 8pm to 10:30pm.'
 			}
 		}
   }

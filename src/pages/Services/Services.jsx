@@ -27,6 +27,15 @@ function Services() {
       <img className='services-cover' src='./src/assets/images/makiro_services_cover.jpg'/>
       <div className='services-content'>
         <ServicesCard
+          titlePath='services.partner.title'
+          descriptionPath='services.partner.description'
+        />
+        <ServicesCard
+          titlePath='services.delivery.title'
+          descriptionPath='services.delivery.description'
+          statusPath='services.delivery.status'
+        />
+        <ServicesCard
           titlePath='services.reservation.title'
           descriptionPath='services.reservation.description'
           reservation={true}
@@ -38,15 +47,6 @@ function Services() {
           reservation={true}
           contact={true}
           className='contact-card'
-        />
-        <ServicesCard
-          titlePath='services.partner.title'
-          descriptionPath='services.partner.description'
-        />
-        <ServicesCard
-          titlePath='services.delivery.title'
-          descriptionPath='services.delivery.description'
-          statusPath='services.delivery.status'
         />
       </div>
     </div>

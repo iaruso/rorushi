@@ -1,11 +1,26 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 import { NavLink } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import Translator from '../../i18n/Translator.js';
 import Footer from '../Footer/Footer.jsx';
+import gsap from 'gsap';
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const location = useLocation();
+  useEffect(() => {
+    gsap.fromTo(
+      '.app',
+      { opacity: 0 },
+      {
+        opacity: 1,
+        duration: 0.8,
+        delay: 0.4,
+        ease: 'power1.inOut'
+      }
+    );
+  }, [location]);
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);

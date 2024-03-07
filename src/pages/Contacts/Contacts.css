@@ -13,6 +13,8 @@
   animation: image-color 0.6s 1;
   flex: 1;
   height: 0;
+  border: 0.05rem solid #665B53;
+  min-height: 15rem;
 }
 
 .contacts-content {
@@ -28,6 +30,7 @@
   padding: var(--spacing);
   border-radius: var(--border-radius);
   background-color: var(--alabaster);
+  border: var(--gallery) solid var(--border-size);
   gap: var(--spacing);
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -36,11 +39,13 @@
 .contacts-info h2 {
   margin: 0;
   color: var(--mine-shaft);
+  font-size: var(--font-size-xl);
 }
 
 .contacts-info p {
   margin: 0;
   color: var(--tundora);
+  font-size: var(--font-size-m);
 }
 
 .contacts-map {
@@ -53,4 +58,25 @@
   aspect-ratio: 1/1;
   border: 0;
   border-radius: var(--border-radius);
+  border: var(--gallery) solid var(--border-size);
+}
+
+@media screen and (max-width: 768px) {
+  .contacts-section {
+    position: relative;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .contacts-section::-webkit-scrollbar {
+    display: none
+  }
+
+  .contacts-content {
+    flex-direction: column;
+  }
+
+  .contacts-info, .contacts-map {
+    width: 100%;
+  }
 }

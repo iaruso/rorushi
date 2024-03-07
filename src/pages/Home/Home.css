@@ -47,13 +47,11 @@
   text-align: justify;
   text-justify: inter-word;
   margin: 0;
-  animation: fade-in 0.6s 1;
 }
 
 .home-about img {
   width: 100%;
   border-radius: var(--border-radius);
-  animation: fade-in 0.6s 1;
   object-fit: cover;
   object-position: center top;
   height: 100%;
@@ -102,7 +100,6 @@
 }
 
 .home-pricing-card p, .home-pricing-card span, .home-details-card h2, .home-details-card p {
-  animation: fade-in 0.6s 1;
   font-family: "Poppins", sans-serif;
   margin: 0;
 }
@@ -143,10 +140,6 @@
 }
 
 .home-contact a {
-  
-}
-
-.home-contact a {
   height: 100%;
   width: 100%;
   display: flex;
@@ -158,11 +151,15 @@
   font-size: var(--font-size-xl);
   font-family: 'Poppins' , sans-serif;
   font-weight: 600;
-  animation: fade-in 0.6s 1;
   height: 4rem;
   border-radius: var(--border-radius);
   background-color: var(--christine);
   border: #ce5205 solid var(--border-size);
+  transition: background-color 0.4s ease-in-out;
+}
+
+.home-contact a:hover {
+  background-color: var(--meteor);
 }
 
 @media screen and (min-width: 1081px) and (max-width: 1440px) {

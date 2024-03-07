@@ -88,7 +88,7 @@ export default {
 			opening_hours: 'Horário de funcionamento',
 			details: {
 				days: 'Todos os dias das 12:00 às 15:00 e 20:00 às 23:00.',
-				services: 'Serviço de entrega todos os dias das 12:30 às 15:00 e 20:00 às 22:30.'
+				services: 'Serviço de take away todos os dias das 12:30 às 15:00 e 20:00 às 22:30.'
 			}
 		}
   }

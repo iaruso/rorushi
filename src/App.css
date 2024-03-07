@@ -21,6 +21,7 @@
   --white: #FFFFFF;
 
   --christine: #F5640B;
+  --meteor: #DD6013;
   /* Font sizes */
   --font-size-xl: 1.25rem;
   --font-size-l: 1.125rem;
@@ -58,15 +59,6 @@ body {
   flex: 1;
   height: calc(100vh - 12rem);
 }
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  } 100% {
-    opacity: 1;
-  }
-}
-
 
 @keyframes image-color {
   0% {

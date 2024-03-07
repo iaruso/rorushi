@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import './Footer.css';
-import { useTranslation } from 'react-i18next'
+import { useTranslation } from 'react-i18next';
+import gsap from 'gsap';
 
 const Footer = () => {
   const { i18n } = useTranslation();
@@ -11,7 +12,18 @@ const Footer = () => {
 	}, [i18n]);
   const toggleLanguage = () => {
     setLanguageBool(prevState => !prevState);
-		!languageBool ? i18n.changeLanguage('en-US') : i18n.changeLanguage('pt-PT');
+    !languageBool ? i18n.changeLanguage('en-US') : i18n.changeLanguage('pt-PT');
+    gsap.fromTo(
+      'html',
+      { opacity: 0 },
+      {
+        opacity: 1,
+        duration: 0.6,
+        delay: 0.4,
+        ease: 'power1.inOut',
+        
+      }
+    );
   };
 
   return (
