@@ -8,8 +8,15 @@ import gsap from 'gsap';
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const [disableLinks, setDisableLinks] = useState(false);
   const location = useLocation();
+  const pathName = location.pathname;
+
   useEffect(() => {
+    setDisableLinks(true);
+    setTimeout(() => {
+      setDisableLinks(false);
+    }, 1200);
     gsap.fromTo(
       '.app',
       { opacity: 0 },
@@ -20,10 +27,18 @@ const Navbar = () => {
         ease: 'power1.inOut'
       }
     );
-  }, [location]);
+  }, [pathName]);
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
+  };
+
+  const handleLinkClick = (event) => {
+    if (disableLinks) {
+      event.preventDefault();
+    } else {
+      setShowMenu(false);
+    }
   };
 
   return (
@@ -31,10 +46,10 @@ const Navbar = () => {
       <div className='navbar-logo'>MAKIRO</div>
       <div className={`navbar-links ${showMenu ? 'active' : ''}`}>
         <div className='navbar-links-list'>
-          <NavLink to='/' onClick={() => setShowMenu(false)}><Translator path='nav.home'/></NavLink>
-          <NavLink to='/menu' onClick={() => setShowMenu(false)}><Translator path='nav.menu'/></NavLink>
-          <NavLink to='/services' onClick={() => setShowMenu(false)}><Translator path='nav.services'/></NavLink>
-          <NavLink to='/contacts' onClick={() => setShowMenu(false)}><Translator path='nav.contacts'/></NavLink>
+          <NavLink to='/' onClick={handleLinkClick}><Translator path='nav.home'/></NavLink>
+          <NavLink to='/menu' onClick={handleLinkClick}><Translator path='nav.menu'/></NavLink>
+          <NavLink to='/services' onClick={handleLinkClick}><Translator path='nav.services'/></NavLink>
+          <NavLink to='/contacts' onClick={handleLinkClick}><Translator path='nav.contacts'/></NavLink>
         </div>
         <Footer/>
       </div>
