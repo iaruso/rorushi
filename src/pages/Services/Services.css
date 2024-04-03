@@ -15,7 +15,6 @@
   height: 0;
   border: 0.05rem solid #E4D7C7;
   object-position: bottom left;
-  min-height: 15rem;
 }
 
 .services-content {
@@ -53,10 +52,10 @@
 }
 
 .services-card-header h2, .services-card-status {
-  font-family: "Poppins", sans-serif;
+  font-family: "Sora", sans-serif;
   font-weight: 600;
   font-size: var(--font-size-xl);
-  color: var(--mine-shaft);
+  color: var(--cod);
   margin: 0;
 }
 
@@ -69,6 +68,7 @@
   position: relative;
   background-color: var(--gallery);
   border-color: var(--silver);
+  cursor: not-allowed;
 }
 
 .services-card.unavailable p, .services-card.unavailable span, .services-card.unavailable h2 {
@@ -82,18 +82,18 @@
 }
 
 .services-card-footer p {
-  font-family: "Poppins", sans-serif;
+  font-family: "Sora", sans-serif;
   font-weight: 600;
   font-size: var(--font-size-l);
-  color: var(--tundora);
+  color: var(--shaft);
   margin: 0;
 }
 
 .services-card-footer span {
-  font-family: "Poppins", sans-serif;
+  font-family: "Sora", sans-serif;
   font-weight: 600;
   font-size: var(--font-size-m);
-  color: var(--tundora);
+  color: var(--shaft);
 }
 
 @media screen and (max-width: 768px) {
@@ -119,5 +119,9 @@
 
   .services-card.contact-card {
     order: 1;
+  }
+
+  .services-card {
+    gap: var(--spacing-sm);
   }
 }

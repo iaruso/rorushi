@@ -1,7 +1,7 @@
 .promo-banner {
   min-height: 3rem;
   border-radius: var(--border-radius);
-  background-color: var(--mine-shaft);
+  background-color: var(--cod);
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -28,7 +28,7 @@
   font-weight: 600;
   white-space: nowrap;
   margin: 0 5vw;
-  font-family: "Poppins", sans-serif;
+  font-family: "Sora", sans-serif;
   font-weight: 600;
   font-size: 1rem;
 }

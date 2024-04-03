@@ -1,4 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HelmetProvider, Helmet } from 'react-helmet-async';
+import { useTranslation } from 'react-i18next';
 import './App.css'
 
 /* Components */
@@ -19,9 +21,14 @@ const router = [
 ];
 
 function App() {
-
+  const { t } = useTranslation();
   return (
     <>
+      <HelmetProvider>
+        <Helmet>
+          <meta name="description" content={t('meta.description')} />
+        </Helmet>
+      </HelmetProvider>
       <Router>
         <Navbar/>
         <div className='app'>

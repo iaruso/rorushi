@@ -21,6 +21,8 @@
   display: flex;
   width: 100%;
   gap: var(--spacing);
+  height: 0;
+  flex: 1;
 }
 
 .contacts-info {
@@ -32,19 +34,19 @@
   background-color: var(--alabaster);
   border: var(--gallery) solid var(--border-size);
   gap: var(--spacing);
-  font-family: "Poppins", sans-serif;
+  font-family: "Sora", sans-serif;
   font-weight: 600;
 }
 
 .contacts-info h2 {
   margin: 0;
-  color: var(--mine-shaft);
+  color: var(--cod);
   font-size: var(--font-size-xl);
 }
 
 .contacts-info p {
   margin: 0;
-  color: var(--tundora);
+  color: var(--shaft);
   font-size: var(--font-size-m);
 }
 
@@ -78,5 +80,13 @@
 
   .contacts-info, .contacts-map {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .contacts-info > div {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
   }
 }

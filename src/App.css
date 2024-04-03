@@ -12,8 +12,8 @@
   --letter-spacing-sm: 0.05rem;
   /* Colors */
   
-  --mine-shaft: #252729;
-  --tundora: #33373C;
+  --cod: #1A1A1A;
+  --shaft: #3C3C3C;
   --chalice: #AAAAAA;
   --silver: #CCCCCC;
   --gallery: #EEEEEE;
@@ -24,9 +24,9 @@
   --meteor: #DD6013;
   /* Font sizes */
   --font-size-xl: 1.25rem;
-  --font-size-l: 1.125rem;
-  --font-size-m: 1rem;
-  --font-size-sm: 0.875rem;
+  --font-size-l: 1rem;
+  --font-size-m: 0.875rem;
+  --font-size-sm: 0.625rem;
   /* Borders */
   --border-radius: 0.25rem;
   --border-size: 0.05rem;
@@ -71,7 +71,7 @@ body {
 
 @media screen and (min-width: 1921px) {
   :root {
-    font-size: calc(16px + (20 - 16) * (100vw - 1920px) / (3840 - 1920));
+    font-size: calc(16px + (28 - 16) * (100vw - 1920px) / (3840 - 1920));
   }
   #root {
     width: calc(50vw - calc(2 * var(--spacing)));

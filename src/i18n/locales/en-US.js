@@ -6,6 +6,9 @@ const formattedDate = `${month}/${day}`;
 
 export default {
   translations: {
+		meta: {
+			description: 'Discover the essence of traditional sushi at Rorushi. Immerse yourself in the art of Japanese culinary mastery with our authentic and carefully crafted rolls. Delight your taste buds with the purity of flavors and the freshest ingredients. Experience the timeless elegance of sushi at Rorushi, where tradition comes alive in every bite.',
+		},
     banner: `Get 20% off your online reservation until ${formattedDate}.`,
     nav: {
       home: 'Home',
@@ -22,15 +25,15 @@ export default {
 			details: {
 				quality: {
 					title: 'Quality',
-					description: 'Indulge in fresh sushi prepared by our chef with over 30 years of experience.'
+					description: 'Indulge in fresh sushi prepared by our chef with over 30 years of experience'
 				},
 				service: {
 					title: 'Service',
-					description: 'Dine in at the restaurant with our all-you-can-eat option or place an order for takeout.'
+					description: 'Dine in at the restaurant with our all-you-can-eat option or place an order for takeout'
 				},
 				environment: {
 					title: 'Environment',
-					description: 'Join us in minimizing waste. We charge €0.50 for each piece of sushi wasted.'
+					description: 'Join us in minimizing waste (we charge €0.50 for each piece of sushi wasted)'
 				}
 			},
 			pricing: {
@@ -66,20 +69,20 @@ export default {
 		services: {
 			reservation: {
 				title: 'Reservation',
-				description: 'Book a table in our restaurant.' 
+				description: 'Book a table in our restaurant' 
 			},
 			delivery: {
 				title: 'Delivery',
-				description: 'Have it delivered to your home.',
+				description: 'Have it delivered to your home',
 				status: 'Unavailable'
 			},
 			partner: {
 				title: 'Partner deliveries',
-				description: 'Place your order in one of ordering apps.'
+				description: 'Place your order in one of ordering apps'
 			},
 			takeaway: {
 				title: 'Take away',
-				description: 'Contact us and collect your order.'
+				description: 'Contact us and collect your order'
 			}
 		},
 		contacts: {

@@ -21,7 +21,6 @@ const Footer = () => {
         duration: 0.6,
         delay: 0.4,
         ease: 'power1.inOut',
-        
       }
     );
   };
@@ -29,7 +28,7 @@ const Footer = () => {
   return (
     <footer className='footer'>
       <div className='footer-language'>
-        <span className="text-sm text-main ml-[0.125rem]" onClick={toggleLanguage}>
+        <span onClick={toggleLanguage}>
           {languageBool ? "English" : "Português"}
         </span>
       </div>

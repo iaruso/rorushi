@@ -6,6 +6,9 @@ const formattedDate = `${day}/${month}`;
 
 export default {
   translations: {
+		meta: {
+			description: 'Descubra a essência do sushi tradicional no Rorushi. Mergulhe na arte da mestria culinária japonesa com os nossos rolos autênticos e cuidadosamente elaborados. Delicie o seu paladar com a pureza dos sabores e os ingredientes mais frescos. Experimente a elegância intemporal do sushi no Rorushi, onde a tradição ganha vida em cada dentada.'
+		},
 		banner: `Obtenha 20% de desconto numa reserva online até ${formattedDate}.`,
 		nav: {
 			home: 'Início',
@@ -22,15 +25,15 @@ export default {
 			details: {
 				quality: {
 					title: 'Qualidade',
-					description: 'Desfrute de sushi fresco preparado pelo chef com mais de 30 anos de experiência.'
+					description: 'Desfrute de sushi fresco preparado pelo chef com mais de 30 anos de experiência'
 				},
 				service: {
 					title: 'Serviço',
-					description: 'Desfrute de uma refeição rodízio ou faça uma encomenda para levar para casa.'
+					description: 'Desfrute de uma refeição rodízio ou faça uma encomenda para levar para casa'
 				},
 				environment: {
 					title: 'Ambiente',
-					description: 'Ajude-nos a reduzir o desperdício (0,50€ por cada peça desperdiçada).'
+					description: 'Ajude-nos a reduzir o desperdício (0,50€ por cada peça desperdiçada)'
 				}
 			},
 			pricing: {
@@ -66,20 +69,20 @@ export default {
 		services: {
 			reservation: {
 				title: 'Reserva',
-				description: 'Reserve uma mesa no nosso restaurante.' 
+				description: 'Reserve uma mesa no nosso restaurante' 
 			},
 			delivery: {
 				title: 'Encomenda',
-				description: 'Faça encomenda à sua casa.',
+				description: 'Faça encomenda à sua casa',
 				status: 'Indisponível'
 			},
 			partner: {
 				title: 'Serviços de entrega',
-				description: 'Faça a sua encomenda numa das aplicações de entrega.'
+				description: 'Faça a sua encomenda numa das aplicações de entrega'
 			},
 			takeaway: {
 				title: 'Take away',
-				description: 'Contacte-nos e recolha a sua encomenda.'
+				description: 'Contacte-nos e recolha a sua encomenda'
 			}
 		},
 		contacts: {

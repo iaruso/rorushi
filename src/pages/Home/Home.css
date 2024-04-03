@@ -14,7 +14,7 @@
   border-radius: var(--border-radius);
   animation: image-color 0.6s 1;
   border: 0.05rem solid #ddd;
-  min-height: 15rem;
+  min-height: 5rem;
 }
 
 .home-content {
@@ -40,10 +40,10 @@
 }
 
 .home-about p {
-  font-family: "Poppins", sans-serif;
+  font-family: "Sora", sans-serif;
   font-weight: 600;
   font-size: var(--font-size-l);
-  color: var(--mine-shaft);
+  color: var(--cod);
   text-align: justify;
   text-justify: inter-word;
   margin: 0;
@@ -100,7 +100,7 @@
 }
 
 .home-pricing-card p, .home-pricing-card span, .home-details-card h2, .home-details-card p {
-  font-family: "Poppins", sans-serif;
+  font-family: "Sora", sans-serif;
   margin: 0;
 }
 
@@ -123,7 +123,7 @@
 }
 
 .home-details-card h2 {
-  color: var(--mine-shaft);
+  color: var(--cod);
 }
 
 .home-details-card p {
@@ -132,7 +132,7 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
-  color: var(--tundora);
+  color: var(--shaft);
 }
 
 .home-contact {
@@ -148,10 +148,10 @@
   padding: var(--spacing);
   color: var(--white);
   text-decoration: none;
-  font-size: var(--font-size-xl);
-  font-family: 'Poppins' , sans-serif;
+  font-size: var(--font-size-l);
+  font-family: 'Sora' , sans-serif;
   font-weight: 600;
-  height: 4rem;
+  height: 3rem;
   border-radius: var(--border-radius);
   background-color: var(--christine);
   border: #ce5205 solid var(--border-size);
@@ -162,27 +162,23 @@
   background-color: var(--meteor);
 }
 
-@media screen and (min-width: 1081px) and (max-width: 1440px) {
-  .home-cover {
-    max-height: unset;
-    min-height: 24rem;
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1080px) {
-  .home-cover {
-    max-height: unset;
-    min-height: 20rem;
-  }
-}
-
 @media screen and (min-width: 769px) {
+  .home-cover {
+    max-height: unset;
+  }
+}
+
+@media screen and (min-width: 1081px) {
   .home-details-card p {
-    height: 5.15rem;
+    height: 4rem;
   }
 }
 
 @media screen and (max-width: 768px) {
+  .home-cover {
+    min-height: 40dvh;
+  }
+  
   .home-section {
     position: relative;
     scrollbar-width: none;
@@ -191,11 +187,6 @@
 
   .home-section::-webkit-scrollbar {
     display: none
-  }
-
-  .home-options {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
   }
 
   .home-pricing-card-footer {
@@ -209,5 +200,16 @@
     position: -webkit-sticky;
     bottom: 0;
     margin-top: -1rem;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .home-options {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .home-details-card {
+    align-items: center;
+    min-height: 7rem;
   }
 }

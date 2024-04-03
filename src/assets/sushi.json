@@ -41,9 +41,9 @@
           "ingredients": ["Shrimp", "Sushi Rice"]
         },
         {
-          "name": "Sea Bass Nigiri",
-          "description": "Fresh sea bass slices served over hand-pressed sushi rice.",
-          "ingredients": ["Sea Bass", "Sushi Rice"]
+          "name": "Butter Fish Nigiri",
+          "description": "",
+          "ingredients": ["Butter Fish", "Sushi Rice"]
         },
         {
           "name": "Unagi Nigiri",
@@ -59,40 +59,36 @@
         {
           "name": "Tuna Maki",
           "description": "Tuna and sushi rice wrapped in seaweed.",
-          "ingredients": ["Tuna", "Sushi Rice", "Seaweed"]
+          "ingredients": ["Tuna", "Sushi Rice"]
         },
         {
           "name": "Salmon Maki",
           "description": "Salmon and sushi rice wrapped in seaweed.",
-          "ingredients": ["Salmon", "Sushi Rice", "Seaweed"]
-        },
-        {
-          "name": "Salmon Philadelphia Maki",
-          "description": "Salmon, cream cheese, and avocado wrapped in seaweed.",
-          "ingredients": ["Salmon", "Cream Cheese", "Avocado", "Seaweed"]
-        },
+          "ingredients": ["Salmon", "Sushi Rice"]
+        }
         {
           "name": "Shrimp Maki",
           "description": "Grilled shrimp and sushi rice wrapped in seaweed.",
-          "ingredients": ["Shrimp", "Sushi Rice", "Seaweed"]
+          "ingredients": ["Shrimp", "Sushi Rice"]
+        },
+        {
+          "name": "Unagi Maki",
+          "description": "Fresh avocado and sushi rice wrapped in seaweed.",
+          "ingredients": ["Unagi", "Sushi Rice"]
         },
         {
           "name": "Cucumber Maki",
           "description": "Fresh cucumber and sushi rice wrapped in seaweed.",
-          "ingredients": ["Cucumber", "Sushi Rice", "Seaweed"]
+          "ingredients": ["Cucumber", "Sushi Rice"]
         },
         {
           "name": "Avocado Maki",
           "description": "Fresh avocado and sushi rice wrapped in seaweed.",
-          "ingredients": ["Avocado", "Sushi Rice", "Seaweed"]
-        },
-        {
-          "name": "Kappa Maki",
-          "description": "Cucumber and sushi rice wrapped in seaweed.",
-          "ingredients": ["Cucumber", "Sushi Rice", "Seaweed"]
+          "ingredients": ["Avocado", "Sushi Rice"]
         }
       ]
     },
+    /* Ver melhor as opções disponíveis */
     {
       "name": "Uramaki",
       "type": "Uramaki",
@@ -137,27 +133,6 @@
           "name": "Salmon Gunkan",
           "description": "Salmon wrapped in seaweed and topped with sushi rice.",
           "ingredients": ["Salmon", "Seaweed", "Sushi Rice"]
-        },
-        {
-          "name": "Salmon Philadelphia Gunkan",
-          "description": "Salmon and cream cheese wrapped in seaweed and topped with sushi rice.",
-          "ingredients": ["Salmon", "Cream Cheese", "Seaweed", "Sushi Rice"]
-        }
-      ]
-    },
-    {
-      "name": "Hot Rolls",
-      "type": "Hot",
-      "options": [
-        {
-          "name": "Hot Roll",
-          "description": "Deep-fried sushi roll with assorted ingredients.",
-          "ingredients": ["Assorted Ingredients", "Seaweed", "Sushi Rice"]
-        },
-        {
-          "name": "Hot Roll Philadelphia",
-          "description": "Deep-fried sushi roll with salmon, cream cheese, and assorted ingredients.",
-          "ingredients": ["Salmon", "Cream Cheese", "Assorted Ingredients", "Seaweed", "Sushi Rice"]
         }
       ]
     },
@@ -182,5 +157,6 @@
         }
       ]
     }
+    /* Adicionar mais 5-11 peças */
   ]
 }

@@ -5,6 +5,7 @@ import { useLocation } from 'react-router-dom';
 import Translator from '../../i18n/Translator.js';
 import Footer from '../Footer/Footer.jsx';
 import gsap from 'gsap';
+import Logo from '../Logo/Logo.jsx';
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -43,7 +44,9 @@ const Navbar = () => {
 
   return (
     <nav className='navbar'>
-      <div className='navbar-logo'>MAKIRO</div>
+      <div className='navbar-logo'>
+        <Logo/>
+      </div>
       <div className={`navbar-links ${showMenu ? 'active' : ''}`}>
         <div className='navbar-links-list'>
           <NavLink to='/' onClick={handleLinkClick}><Translator path='nav.home'/></NavLink>

@@ -1,38 +1,38 @@
 .navbar {
+  font-family: "Sora", sans-serif;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  height: 4rem;
+  gap: var(--spacing-sm);
 }
 
 .navbar-logo {
-  font-family: HansonBold;
-  letter-spacing: var(--letter-spacing);
-  font-size: 3rem;
-  color: var(--mine-shaft);
-  height: 4rem;
+  height: 3rem;
   display: flex;
-  align-items: end;
+  align-items: center;
+}
+
+.navbar-logo svg {
+  height: 100%;
 }
 
 .navbar-links {
-  font-family: HansonBold;
-  font-size: 1.25rem;
-  text-transform: uppercase;
+  font-size: var(--font-size-m);
+  font-weight: 600;
   display: flex;
 }
 
 .navbar-links-list {
   display: flex;
   align-items: center;
-  justify-content: end;
-  gap: var(--spacing);
+  justify-content: center;
+  gap: var(--spacing-sm);
 }
 
 .navbar-links a {
   text-decoration: none;
-  color: var(--mine-shaft);
-  letter-spacing: var(--letter-spacing-sm);
+  color: var(--shaft);
   transition: all 0.2s ease-in-out;
 }
 
@@ -49,7 +49,7 @@
 }
 
 .hamburger svg {
-  fill: var(--mine-shaft);
+  fill: var(--cod);
   width: 2rem;
   height: 2rem;
 }
@@ -58,14 +58,20 @@
   display: none;
 }
 
-.navbar-links a:hover, .navbar-links a.active {
+.navbar-links a:hover {
+  color: var(--cod);
+}
+
+.navbar-links a.active {
   color: var(--christine);
 }
 
 /* Responsive styles */
 @media screen and (max-width: 768px) {
   .navbar {
-    height: 3rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .navbar-logo {
@@ -85,6 +91,11 @@
     padding: 1rem;
     padding-top: 1rem;
     z-index: 999;
+  }
+
+  .navbar-links a {
+    font-size: var(--font-size-xl);
+    text-transform: uppercase;
   }
 
   .navbar-links.active {
@@ -114,7 +125,27 @@
 }
 
 @media screen and (min-width: 769px) {
-  .navbar-links a:hover, .navbar-links a.active {
-    transform: rotate(-1deg);
+  .navbar-links a {
+    background-color: var(--alabaster);
+    padding: 0.25rem var(--spacing-sm);
+    width: 6rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--border-radius);
+    border: var(--border-size) solid var(--gallery);
+  }
+
+  .navbar-links a:hover {
+    background-color: var(--gallery);
+    color: var(--cod);
+    border-color: var(--silver);
+  }
+  
+  .navbar-links a.active {
+    background-color: var(--christine);
+    color: var(--white);
+    border-color: var(--meteor);
   }
 }

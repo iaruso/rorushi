@@ -5,7 +5,7 @@ import Translator from '../../i18n/Translator';
 function Contacts(){
   return (
     <div className='contacts-section'>
-      <img className='contacts-cover' src='./src/assets/images/makiro_contacts_cover.jpg'/>
+      <img className='contacts-cover' src='./rorushi_contacts_cover.jpg'/>
       <div className='contacts-content'>
         <div className='contacts-info'>
           <div>
