@@ -24,7 +24,11 @@ function ServicesCard({ titlePath, descriptionPath, statusPath, reservation, con
 function Services() {
   return (
     <div className='services-section'>
-      <img className='services-cover' src='./rorushi_services_cover.jpg'/>
+      <img className='services-cover'
+        srcSet="./rorushi_services_cover_min.jpg 768w,
+        ./rorushi_services_cover.jpg 1024w"
+        sizes="(max-width: 1024px) 100vw, 1024px"
+        src='./rorushi_services_cover.jpg' alt='Services cover'/>
       <div className='services-content'>
         <ServicesCard
           titlePath='services.partner.title'

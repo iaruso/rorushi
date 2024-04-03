@@ -28,7 +28,11 @@ const DetailsCard = ({ titlePath, descriptionPath }) => (
 function Home(){
   return (
     <div className='home-section'>
-      <img className='home-cover' src='./rorushi_main_cover.jpg'/>
+      <img className='home-cover' 
+        srcSet="./rorushi_home_cover_min.jpg 768w,
+        ./rorushi_home_cover.jpg 1024w"
+        sizes="(max-width: 1024px) 100vw, 1024px"
+        src='./rorushi_home_cover.jpg' alt='Home cover'/>
       <Banner/>
       <div className='home-content'>
         <div className='home-options'>
