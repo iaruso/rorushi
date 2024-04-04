@@ -42,7 +42,7 @@ function Menu() {
       let filteredData = sushiData.sushiCollection.flatMap(type =>
         type.options.filter(
           option =>
-            t(option.name.toLowerCase()).includes(searchQuery) &&
+            t(option.name.toLowerCase()).toLowerCase().includes(searchQuery.toLowerCase()) &&
             (selectedType === 'All' || type.type === selectedType)
         )
       );
