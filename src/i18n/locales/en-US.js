@@ -64,7 +64,112 @@ export default {
 			}
 		},
 		menu: {
-
+			search: 'Search by name',
+			sashimi: {
+				tuna: {
+					name: 'Tuna sashimi',
+					description: 'Fresh slices of tuna.',
+					ingredients: ['Tuna'],
+				},
+				salmon: {
+					name: 'Salmon sashimi',
+					description: 'Fresh slices of salmon.',
+					ingredients: ['Salmon'],
+				},
+				butterfish: {
+					name: 'Butterfish sashimi',
+					description: 'Fresh slices of butterfish.',
+					ingredients: ['Butterfish'],
+				},
+			},
+			nigiri: {
+				tuna: {
+					name: 'Tuna nigiri',
+					description: 'Fresh tuna slices served over hand-pressed sushi rice.',
+					ingredients: ['Tuna', 'Rice'],
+				},
+				salmon: {
+					name: 'Salmon nigiri',
+					description: 'Fresh salmon slices served over hand-pressed sushi rice.',
+					ingredients: ['Salmon', 'Rice'],
+				},
+				butterfish: {
+					name: 'Butterfish nigiri',
+					description: 'Fresh butterfish slices served over hand-pressed sushi rice.',
+					ingredients: ['Butterfish', 'Rice'],
+				},
+				shrimp: {
+					name: 'Shrimp nigiri',
+					description: 'Fresh shrimp served over hand-pressed sushi rice.',
+					ingredients: ['Shrimp', 'Rice'],
+				},
+				unagi: {
+					name: 'Unagi nigiri',
+					description: 'Fresh eel served over hand-pressed sushi rice.',
+					ingredients: ['Eel', 'Rice'],
+				}
+			},
+			maki: {
+				tuna: {
+					name: 'Tuna maki',
+					description: 'Fresh tuna wrapped in seaweed and sushi rice.',
+					ingredients: ['Tuna', 'Seaweed', 'Rice'],
+				},
+				salmon: {
+					name: 'Salmon maki',
+					description: 'Fresh salmon wrapped in seaweed and sushi rice.',
+					ingredients: ['Salmon', 'Seaweed', 'Rice'],
+				},
+				shrimp: {
+					name: 'Shrimp maki',
+					description: 'Fresh shrimp wrapped in seaweed and sushi rice.',
+					ingredients: ['Shrimp', 'Seaweed', 'Rice'],
+				},
+				unagi: {
+					name: 'Unagi maki',
+					description: 'Fresh eel wrapped in seaweed and sushi rice.',
+					ingredients: ['Eel', 'Seaweed', 'Rice'],
+				},
+				avocado: {
+					name: 'Avocado maki',
+					description: 'Fresh avocado wrapped in seaweed and sushi rice.',
+					ingredients: ['Avocado', 'Seaweed', 'Rice'],
+				},
+				cucumber: {
+					name: 'Cucumber maki',
+					description: 'Fresh cucumber wrapped in seaweed and sushi rice.',
+					ingredients: ['Cucumber', 'Seaweed', 'Rice'],
+				},
+			},
+			gunkan: {
+				tuna: {
+					name: 'Tuna gunkan',
+					description: 'Fresh tuna wrapped in seaweed and sushi rice.',
+					ingredients: ['Tuna', 'Seaweed', 'Rice'],
+				},
+				salmon: {
+					name: 'Salmon gunkan',
+					description: 'Fresh salmon wrapped in seaweed and sushi rice.',
+					ingredients: ['Salmon', 'Seaweed', 'Rice'],
+				},
+			},
+			temaki: {
+				tuna: {
+					name: 'Tuna temaki',
+					description: 'Hand-rolled cone of seaweed filled with tuna and sushi rice.',
+					ingredients: ['Tuna', 'Seaweed', 'Rice'],
+				},
+				salmon: {
+					name: 'Salmon temaki',
+					description: 'Hand-rolled cone of seaweed filled with salmon and sushi rice.',
+					ingredients: ['Salmon', 'Seaweed', 'Rice'],
+				},
+				tempura: {
+					name: 'Tempura temaki',
+					description: 'Hand-rolled cone of seaweed filled with tempura shrimp and sushi rice.',
+					ingredients: ['Tempura shrimp', 'Seaweed', 'Rice'],
+				},
+			}
 		},
 		services: {
 			reservation: {

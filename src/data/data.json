@@ -1,0 +1,162 @@
+{
+  "sushiCollection": [
+    {
+      "type": "Sashimi",
+      "options": [
+        {
+          "name": "menu.sashimi.tuna.name",
+          "description": "menu.sashimi.tuna.description",
+          "ingredients": ["menu.sashimi.tuna.ingredients.0"],
+          "img": "sashimi_tuna.png",
+          "img_min": "sashimi_tuna_min.png"
+        },
+        {
+          "name": "menu.sashimi.salmon.name",
+          "description": "menu.sashimi.salmon.description",
+          "ingredients": ["menu.sashimi.salmon.ingredients.0"],
+          "img": "sashimi_salmon.png",
+          "img_min": "sashimi_salmon_min.png"
+        },
+        {
+          "name": "menu.sashimi.butterfish.name",
+          "description": "menu.sashimi.butterfish.description",
+          "ingredients": ["menu.sashimi.butterfish.ingredients.0"],
+          "img": "sashimi_butterfish.png",
+          "img_min": "sashimi_butterfish_min.png"
+        }
+      ]
+    },
+    {
+      "type": "Nigiri",
+      "options": [
+        {
+          "name": "menu.nigiri.tuna.name",
+          "description": "menu.nigiri.tuna.description",
+          "ingredients": ["menu.nigiri.tuna.ingredients.0", "menu.nigiri.tuna.ingredients.1"],
+          "img": "nigiri_tuna.png",
+          "img_min": "nigiri_tuna_min.png"
+        },
+        {
+          "name": "menu.nigiri.salmon.name",
+          "description": "menu.nigiri.salmon.description",
+          "ingredients": ["menu.nigiri.salmon.ingredients.0", "menu.nigiri.salmon.ingredients.1"],
+          "img": "nigiri_salmon.png",
+          "img_min": "nigiri_salmon_min.png"
+        },
+        {
+          "name": "menu.nigiri.shrimp.name",
+          "description": "menu.nigiri.shrimp.description",
+          "ingredients": ["menu.nigiri.shrimp.ingredients.0", "menu.nigiri.shrimp.ingredients.1"],
+          "img": "nigiri_shrimp.png",
+          "img_min": "nigiri_shrimp_min.png"
+        },
+        {
+          "name": "menu.nigiri.butterfish.name",
+          "description": "menu.nigiri.butterfish.description",
+          "ingredients": ["menu.nigiri.butterfish.ingredients.0", "menu.nigiri.butterfish.ingredients.1"],
+          "img": "nigiri_butterfish.png",
+          "img_min": "nigiri_butterfish_min.png"
+        },
+        {
+          "name": "menu.nigiri.unagi.name",
+          "description": "menu.nigiri.unagi.description",
+          "ingredients": ["menu.nigiri.unagi.ingredients.0", "menu.nigiri.unagi.ingredients.1"],
+          "img": "nigiri_unagi.png",
+          "img_min": "nigiri_unagi_min.png"
+        }
+      ]
+    },
+    {
+      "type": "Maki",
+      "options": [
+        {
+          "name": "menu.maki.tuna.name",
+          "description": "menu.maki.tuna.description",
+          "ingredients": ["menu.maki.tuna.ingredients.0", "menu.maki.tuna.ingredients.1"],
+          "img": "maki_tuna.png",
+          "img_min": "maki_tuna_min.png"
+        },
+        {
+          "name": "menu.maki.salmon.name",
+          "description": "menu.maki.salmon.description",
+          "ingredients": ["menu.maki.salmon.ingredients.0", "menu.maki.salmon.ingredients.1"],
+          "img": "maki_salmon.png",
+          "img_min": "maki_salmon_min.png"
+        },
+        {
+          "name": "menu.maki.shrimp.name",
+          "description": "menu.maki.shrimp.description",
+          "ingredients": ["menu.maki.shrimp.ingredients.0", "menu.maki.shrimp.ingredients.1"],
+          "img": "maki_shrimp.png",
+          "img_min": "maki_shrimp_min.png"
+        },
+        {
+          "name": "menu.maki.unagi.name",
+          "description": "menu.maki.unagi.description",
+          "ingredients": ["menu.maki.unagi.ingredients.0", "menu.maki.unagi.ingredients.1"],
+          "img": "maki_unagi.png",
+          "img_min": "maki_unagi_min.png"
+        },
+        {
+          "name": "menu.maki.cucumber.name",
+          "description": "menu.maki.cucumber.description",
+          "ingredients": ["menu.maki.cucumber.ingredients.0", "menu.maki.cucumber.ingredients.1"],
+          "img": "maki_cucumber.png",
+          "img_min": "maki_cucumber_min.png"
+        },
+        {
+          "name": "menu.maki.avocado.name",
+          "description": "menu.maki.avocado.description",
+          "ingredients": ["menu.maki.avocado.ingredients.0", "menu.maki.avocado.ingredients.1"],
+          "img": "maki_avocado.png",
+          "img_min": "maki_avocado_min.png"
+        }
+      ]
+    },
+    {
+      "type": "Gunkan",
+      "options": [
+        {
+          "name": "menu.gunkan.tuna.name",
+          "description": "menu.gunkan.tuna.description",
+          "ingredients": ["menu.gunkan.tuna.ingredients.0", "menu.gunkan.tuna.ingredients.1", "menu.gunkan.tuna.ingredients.2"],
+          "img": "gunkan_tuna.png",
+          "img_min": "gunkan_tuna_min.png"
+        },
+        {
+          "name": "menu.gunkan.salmon.name",
+          "description": "menu.gunkan.salmon.description",
+          "ingredients": ["menu.gunkan.salmon.ingredients.0", "menu.gunkan.salmon.ingredients.1", "menu.gunkan.salmon.ingredients.2"],
+          "img": "gunkan_salmon.png",
+          "img_min": "gunkan_salmon_min.png"
+        }
+      ]
+    },
+    {
+      "type": "Temaki",
+      "options": [
+        {
+          "name": "menu.temaki.tuna.name",
+          "description": "menu.temaki.tuna.description",
+          "ingredients": ["menu.temaki.tuna.ingredients.0", "menu.temaki.tuna.ingredients.1", "menu.temaki.tuna.ingredients.2"],
+          "img": "temaki_tuna.png",
+          "img_min": "temaki_tuna_min.png"
+        },
+        {
+          "name": "menu.temaki.salmon.name",
+          "description": "menu.temaki.salmon.description",
+          "ingredients": ["menu.temaki.salmon.ingredients.0", "menu.temaki.salmon.ingredients.1", "menu.temaki.salmon.ingredients.2"],
+          "img": "temaki_salmon.png",
+          "img_min": "temaki_salmon_min.png"
+        },
+        {
+          "name": "menu.temaki.tempura.name",
+          "description": "menu.temaki.tempura.description",
+          "ingredients": ["menu.temaki.tempura.ingredients.0", "menu.temaki.tempura.ingredients.1", "menu.temaki.tempura.ingredients.2"],
+          "img": "temaki_tempura.png",
+          "img_min": "temaki_tempura_min.png"
+        }
+      ]
+    }
+  ]
+}

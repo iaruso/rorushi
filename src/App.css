@@ -1,10 +1,5 @@
-@font-face {
-  font-family: HansonBold;
-  src: url('assets/fonts/Hanson-Bold.otf') format('opentype');
-}
-
 :root {
-  font-family: Inter, sans-serif;
+  font-family: Sora, sans-serif;
   /* Spacing */
   --spacing: 1rem;
   --spacing-sm: 0.5rem;
@@ -26,7 +21,7 @@
   --font-size-xl: 1.25rem;
   --font-size-l: 1rem;
   --font-size-m: 0.875rem;
-  --font-size-sm: 0.625rem;
+  --font-size-sm: 0.75rem;
   /* Borders */
   --border-radius: 0.25rem;
   --border-size: 0.05rem;
@@ -66,6 +61,12 @@ body {
   }
   100% {
     filter: grayscale(0);
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  ::-webkit-scrollbar {
+    display: none;
   }
 }
 
@@ -125,19 +126,3 @@ body {
     min-height: fit-content;
   }
 }
-
-/*
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-*/

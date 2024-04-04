@@ -64,7 +64,112 @@ export default {
 			}
 		},
 		menu: {
-
+			search: 'Pesquise pelo nome',
+			sashimi: {
+				tuna: {
+					name: 'Sashimi de atum',
+					description: 'Fatias frescas de atum.',
+					ingredients: ['Atum'],
+				},
+				salmon: {
+					name: 'Sashimi de salmão',
+					description: 'Fatias frescas de salmão.',
+					ingredients: ['Salmão'],
+				},
+				butterfish: {
+					name: 'Sashimi de peixe manteiga',
+					description: 'Fatias frescas de peixe.',
+					ingredients: ['Peixe manteiga'],
+				},
+			},
+			nigiri: {
+				tuna: {
+					name: 'Nigiri de atum',
+					description: 'Fatias frescas de atum servidas sobre arroz de sushi prensado à mão.',
+					ingredients: ['Atum', 'Arroz'],
+				},
+				salmon: {
+					name: 'Nigiri de salmão',
+					description: 'Fatias frescas de salmão servidas sobre arroz de sushi prensado à mão.',
+					ingredients: ['Salmão', 'Arroz'],
+				},
+				butterfish: {
+					name: 'Nigiri de peixe manteiga',
+					description: 'Fatias frescas de peixe manteiga servidas sobre arroz de sushi prensado à mão.',
+					ingredients: ['Peixe Manteiga', 'Arroz'],
+				},
+				shrimp: {
+					name: 'Nigiri de camarão',
+					description: 'Camarão fresco servido sobre arroz de sushi prensado à mão.',
+					ingredients: ['Camarão', 'Arroz'],
+				},
+				unagi: {
+					name: 'Nigiri de enguia',
+					description: 'Enguia fresca servida sobre arroz de sushi prensado à mão.',
+					ingredients: ['Enguia', 'Arroz'],
+				}
+			},
+			maki: {
+				tuna: {
+					name: 'Maki de atum',
+					description: 'Atum fresco envolto em alga e arroz de sushi.',
+					ingredients: ['Atum', 'Alga', 'Arroz'],
+				},
+				salmon: {
+					name: 'Maki de salmão',
+					description: 'Salmão fresco envolto em alga e arroz de sushi.',
+					ingredients: ['Salmão', 'Alga', 'Arroz'],
+				},
+				shrimp: {
+					name: 'Maki de camarão',
+					description: 'Camarão fresco envolto em alga e arroz de sushi.',
+					ingredients: ['Camarão', 'Alga', 'Arroz'],
+				},
+				unagi: {
+					name: 'Maki de enguia',
+					description: 'Enguia fresca envolta em alga e arroz de sushi.',
+					ingredients: ['Enguia', 'Alga', 'Arroz'],
+				},
+				avocado: {
+					name: 'Maki de abacate',
+					description: 'Abacate fresco envolto em alga e arroz de sushi.',
+					ingredients: ['Abacate', 'Alga', 'Arroz'],
+				},
+				cucumber: {
+					name: 'Maki de pepino',
+					description: 'Pepino fresco envolto em alga e arroz de sushi.',
+					ingredients: ['Pepino', 'Alga', 'Arroz'],
+				},
+			},
+			gunkan: {
+				tuna: {
+					name: 'Gunkan de atum',
+					description: 'Atum fresco envolto em alga e arroz de sushi.',
+					ingredients: ['Atum', 'Alga', 'Arroz'],
+				},
+				salmon: {
+					name: 'Gunkan de salmão',
+					description: 'Salmão fresco envolto em alga e arroz de sushi.',
+					ingredients: ['Salmão', 'Alga', 'Arroz'],
+				},
+			},
+			temaki: {
+				tuna: {
+					name: 'Temaki de atum',
+					description: 'Cone enrolado de alga recheado com atum e arroz de sushi.',
+					ingredients: ['Atum', 'Alga', 'Arroz'],
+				},
+				salmon: {
+					name: 'Temaki de salmão',
+					description: 'Cone enrolado de alga recheado com salmão e arroz de sushi.',
+					ingredients: ['Salmão', 'Alga', 'Arroz'],
+				},
+				tempura: {
+					name: 'Temaki de tempura',
+					description: 'Cone enrolado de alga recheado com camarão tempura e arroz de sushi.',
+					ingredients: ['Camarão Tempura', 'Alga', 'Arroz'],
+				},
+			}
 		},
 		services: {
 			reservation: {

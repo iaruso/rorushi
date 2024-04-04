@@ -115,7 +115,7 @@
 }
 
 .home-pricing-card p {
-  color: #DB6B26;
+  color: var(--meteor);
 }
 
 .home-pricing-card span {
@@ -154,7 +154,7 @@
   height: 3rem;
   border-radius: var(--border-radius);
   background-color: var(--christine);
-  border: #ce5205 solid var(--border-size);
+  border: var(--meteor) solid var(--border-size);
   transition: background-color 0.4s ease-in-out;
 }
 
