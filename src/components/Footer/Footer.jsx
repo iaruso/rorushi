@@ -3,7 +3,7 @@ import './Footer.css';
 import { useTranslation } from 'react-i18next';
 import gsap from 'gsap';
 
-const Footer = () => {
+const Footer = ({ toggleMenu }) => {
   const { i18n } = useTranslation();
   const [language, setLanguage] = useState(i18n.language);
   
@@ -15,6 +15,8 @@ const Footer = () => {
     const newLanguage = language === 'en-US' ? 'pt-PT' : 'en-US';
     i18n.changeLanguage(newLanguage);
     setLanguage(newLanguage);
+    
+    toggleMenu();
     
     gsap.fromTo(
       'html',

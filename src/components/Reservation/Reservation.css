@@ -193,7 +193,7 @@
 .reservation-modal-actions button {
   background-color: var(--white);
   padding: var(--spacing-sm) var(--spacing);
-  height: 2.5rem;
+  height: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -294,7 +294,7 @@
   font-size: var(--font-size-m);
   color: var(--cod);
   font-family: 'Sora', sans-serif;
-  background-color: var(--alabaster);
+  background-color: white;
 }
 
 .react-calendar__navigation__arrow:disabled, .react-calendar__tile:disabled {
@@ -314,7 +314,11 @@
   font-size: var(--font-size-m);
   color: var(--cod);
   font-family: 'Sora', sans-serif;
-  background-color: var(--alabaster);
+  background-color: white;
+}
+
+.react-calendar__month-view__days__day--neighboringMonth {
+  background-color: var(--gallery) !important;
 }
 
 .react-calendar__tile--active {
@@ -377,6 +381,8 @@
 @media screen and (max-width: 768px) {
   .react-calendar__tile, .react-calendar__month-view__weekdays__weekday {
     width: auto;
+    height: 2rem;
+    aspect-ratio: unset;
   }
   .react-calendar__navigation, .react-calendar__viewContainer, .react-calendar__month-view__days {
     max-width: calc(calc(7 * 2.5rem) + calc(6 * var(--spacing-sm)));

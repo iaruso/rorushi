@@ -54,7 +54,7 @@ const Navbar = () => {
           <NavLink to='/services' onClick={handleLinkClick}><Translator path='nav.services'/></NavLink>
           <NavLink to='/contacts' onClick={handleLinkClick}><Translator path='nav.contacts'/></NavLink>
         </div>
-        <Footer/>
+        <Footer toggleMenu={toggleMenu} />
       </div>
       <div className="hamburger" onClick={toggleMenu}>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">

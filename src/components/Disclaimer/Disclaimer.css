@@ -1,0 +1,65 @@
+.disclaimer-modal {
+  position: fixed;
+  background: #fcfdfd;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  padding: var(--spacing);
+}
+
+.disclaimer-modal-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing);
+  background-color: var(--alabaster);
+  border-radius: var(--border-radius);
+  border: var(--silver) solid var(--border-size);
+  max-height: 100%;
+  overflow-y: auto;
+  width: 30rem;
+  max-width: 100%;
+}
+
+.disclaimer-modal-container h1 {
+  font-size: var(--font-size-xl);
+}
+
+.disclaimer-modal button {
+  background-color: var(--christine);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  border: var(--meteor) solid var(--border-size);
+  padding: var(--spacing-sm) var(--spacing);
+  font-size: var(--font-size-l);
+  font-family: 'Sora', sans-serif;
+  cursor: pointer;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.disclaimer-modal button:hover {
+  background-color: var(--meteor);
+}
+
+@media screen and (max-width: 768px) {
+  .disclaimer-modal {
+    justify-content: end;
+  }
+  .disclaimer-modal button {
+    width: 100%;
+  }
+}

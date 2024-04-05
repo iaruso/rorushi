@@ -6,6 +6,7 @@ import './App.css'
 /* Components */
 import Navbar from './components/Navbar/Navbar.jsx'
 import Footer from './components/Footer/Footer.jsx';
+import Disclaimer from './components/Disclaimer/Disclaimer.jsx';
 /* Pages */
 import Home from './pages/Home/Home.jsx'
 import Menu from './pages/Menu/Menu.jsx'
@@ -30,6 +31,7 @@ function App() {
         </Helmet>
       </HelmetProvider>
       <Router>
+        <Disclaimer/>
         <Navbar/>
         <div className='app'>
           <Routes>
