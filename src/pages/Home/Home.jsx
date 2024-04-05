@@ -35,6 +35,7 @@ function Home(){
   const closeModal = () => {
     setShowModal(false);
   };
+  
   return (
     <div className='home-section'>
       <img className='home-cover' 

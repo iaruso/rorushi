@@ -1,9 +1,10 @@
 import './Reservation.css';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import Select from 'react-dropdown-select';
 import Calendar from 'react-calendar';
 import { HelmetProvider, Helmet } from 'react-helmet-async';
+import gsap from 'gsap';
 import Logo from '../Logo/Logo.jsx';
 import DateIcon from '../Icons/DateIcon.jsx';
 import GroupIcon from '../Icons/GroupIcon.jsx';
@@ -51,6 +52,19 @@ const Reservation = ({ closeModal }) => {
       hourOptions.push({ value: formattedHour, label: formattedHour });
     }
   }
+
+  useEffect(() => {
+    gsap.fromTo(
+      '.reservation-modal-container',
+      { opacity: 0 },
+      {
+        opacity: 1,
+        duration: 0.6,
+        delay: 0.4,
+        ease: 'power1.inOut',
+      }
+    );
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
