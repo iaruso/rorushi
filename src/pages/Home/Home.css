@@ -84,7 +84,7 @@
   padding: var(--spacing);
   background-color: var(--alabaster);
   border-radius: var(--border-radius);
-  border: var(--gallery) solid var(--border-size);
+  border: var(--silver) solid var(--border-size);
 }
 
 .home-details-card {
@@ -139,7 +139,7 @@
   width: 100%;
 }
 
-.home-contact a {
+.home-contact button {
   height: 100%;
   width: 100%;
   display: flex;
@@ -156,9 +156,10 @@
   background-color: var(--christine);
   border: var(--meteor) solid var(--border-size);
   transition: background-color 0.4s ease-in-out;
+  cursor: pointer;
 }
 
-.home-contact a:hover {
+.home-contact button:hover {
   background-color: var(--meteor);
 }
 

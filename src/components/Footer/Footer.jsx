@@ -1,18 +1,21 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 import './Footer.css';
 import { useTranslation } from 'react-i18next';
 import gsap from 'gsap';
 
 const Footer = () => {
   const { i18n } = useTranslation();
-	const [languageBool, setLanguageBool] = useState(null);
-	
-	useEffect(() => {
-		i18n.language === 'en-US' ? setLanguageBool(true) : setLanguageBool(false);
-	}, [i18n]);
+  const [language, setLanguage] = useState(i18n.language);
+  
+  useEffect(() => {
+    setLanguage(i18n.language);
+  }, [i18n.language]);
+  
   const toggleLanguage = () => {
-    setLanguageBool(prevState => !prevState);
-    !languageBool ? i18n.changeLanguage('en-US') : i18n.changeLanguage('pt-PT');
+    const newLanguage = language === 'en-US' ? 'pt-PT' : 'en-US';
+    i18n.changeLanguage(newLanguage);
+    setLanguage(newLanguage);
+    
     gsap.fromTo(
       'html',
       { opacity: 0 },
@@ -29,12 +32,12 @@ const Footer = () => {
     <footer className='footer'>
       <div className='footer-language'>
         <span onClick={toggleLanguage}>
-          {languageBool ? "English" : "Português"}
+          {language === 'en-US' ? 'English' : 'Português'}
         </span>
       </div>
       <div className='footer-social-media'>
-        <a href="#">Facebook</a>
-        <a href="#">Instagram</a>
+        <a href='#'>Facebook</a>
+        <a href='#'>Instagram</a>
       </div>
     </footer>
   );

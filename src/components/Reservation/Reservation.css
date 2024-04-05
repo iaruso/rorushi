@@ -1,0 +1,390 @@
+.reservation-modal {
+  position: fixed;
+  background: #fcfdfd;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reservation-modal-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing);
+  background-color: var(--alabaster);
+  border-radius: var(--border-radius);
+  border: var(--silver) solid var(--border-size);
+  max-height: calc(100% - 2 * var(--spacing));
+  overflow-y: auto;
+}
+
+.reservation-modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.reservation-modal-logo, .reservation-modal-logo svg {
+  width: 10rem;
+}
+
+.reservation-modal-logo {
+  min-height: 2rem;
+}
+
+.reservation-modal-container hr {
+  width: 100%;
+  border: var(--border-size) solid var(--gallery);
+}
+
+.reservation-modal-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: var(--spacing);
+  align-items: center;
+  min-height: 2rem;
+  flex-wrap: wrap;
+}
+
+.reservation-modal-header svg {
+  width: 1.25rem;
+  fill: var(--chalice);
+}
+
+.reservation-modal-header > div {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.reservation-modal-header > div > div {
+  display: flex;
+  gap: var(--spacing-sm);
+  align-items: center;
+}
+
+.reservation-modal-header p {
+  margin: 0;
+}
+
+.reservation-modal-header span.change-language {
+  cursor: pointer;
+}
+
+.reservation-modal-header span.change-language:hover {
+  color: var(--christine);
+}
+
+.reservation-modal-container form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  align-items: center;
+}
+
+.reservation-modal-calendar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.reservation-modal-options, .reservation-modal-actions {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.reservation-modal-options {
+  width: calc(7 * 3rem + 6 * var(--spacing-sm));
+}
+
+.reservation-modal-options > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+
+.reservation-modal-options .react-dropdown-select {
+  border: solid var(--border-size) var(--silver) !important;
+  border-radius: var(--border-radius);
+  background-color: white;
+  outline: none;
+  height: 2rem;
+  font-weight: 500;
+  font-size: var(--font-size-m);
+  padding: var(--spacing-sm);
+  transition: background-color 0.2s ease-in-out;
+  box-shadow: none !important;
+}
+
+.reservation-modal-options .react-dropdown-select-input {
+  color: var(--chalice);
+  font-family: 'Sora', sans-serif;
+  font-size: var(--font-size-m);
+}
+
+.reservation-modal-options .react-dropdown-select:hover {
+  background-color: var(--alabaster);
+  border-color: var(--chalice);
+}
+
+.reservation-modal-options .react-dropdown-select-dropdown {
+  border: solid var(--border-size) var(--silver);
+  border-radius: var(--border-radius);
+  background-color: white;
+  outline: none;
+  box-shadow: 0 0 0.5rem 0.125rem rgba(0, 0, 0, 0.02);
+  padding: var(--spacing-sm);
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  left: unset !important;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  width: 100%;
+}
+
+.reservation-modal-options .react-dropdown-select-dropdown::-webkit-scrollbar {
+  display: none;
+}
+
+.reservation-modal-options .react-dropdown-select-dropdown span {
+  font-weight: 500;
+  font-size: var(--font-size-m);
+  padding: var(--spacing-sm);
+  border-radius: var(--border-radius);
+  transition: background-color 0.2s ease-in-out;
+  font-size: var(--font-size-m);
+}
+
+.reservation-modal-options .react-dropdown-select-dropdown span.react-dropdown-select-item-selected {
+  background-color: var(--christine);
+  color: var(--white);
+}
+
+.reservation-modal-options .react-dropdown-select-dropdown span:not(.react-dropdown-select-item-selected):hover {
+  background-color: var(--gallery);
+}
+
+.reservation-modal-options .react-dropdown-select-dropdown-handle svg {
+  width: 1rem;
+  height: 1rem;
+  fill: var(--chalice) !important;
+}
+
+.reservation-modal-actions {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.reservation-modal-actions button {
+  background-color: var(--white);
+  padding: var(--spacing-sm) var(--spacing);
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius);
+  border: var(--border-size) solid var(--silver);
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  font-family: 'Sora', sans-serif;
+  font-size: var(--font-size-m);
+  color: var(--cod);
+}
+
+.reservation-modal-actions button:hover {
+  background-color: var(--gallery);
+  color: var(--cod);
+  border-color: var(--silver);
+}
+
+.reservation-modal-actions button[type="submit"] {
+  background-color: var(--christine);
+  color: var(--white);
+  border-color: var(--meteor);
+}
+
+.reservation-modal-actions button[type="submit"]:hover {
+  background-color: var(--meteor);
+}
+
+.reservation-modal-options .react-dropdown-select-dropdown-handle:hover path {
+  stroke: var(--shaft) !important;
+}
+
+@media screen and (max-width: 768px) {
+  .reservation-modal-container {
+    max-width: calc(100% - 2 * var(--spacing));
+  }
+
+  .reservation-modal-logo, .reservation-modal-logo svg {
+    width: 7rem;
+  }
+
+  .reservation-modal-container hr {
+    border-color: var(--gallery);
+    margin: 0.25rem 0;
+  }
+
+  .reservation-modal-header {
+    font-size: var(--font-size-m);
+  }
+
+  .reservation-modal-header svg {
+    width: 1rem;
+  }
+
+  .reservation-modal-header > div > div, .reservation-modal-header > div {
+    gap: calc(var(--spacing-sm)/2);
+  }
+
+  .reservation-modal-options {
+    max-width: calc(7 * 2.5rem + 6 * var(--spacing-sm));
+    width: 100%;
+  }
+
+  .reservation-modal-options .react-dropdown-select, .reservation-modal-options .react-dropdown-select-dropdown span, .reservation-modal-options .react-dropdown-select-input {
+    font-size: var(--font-size-sm);
+  }
+}
+
+/* Calendar styling */
+.react-calendar__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.react-calendar__navigation__prev2-button, .react-calendar__navigation__next2-button {
+  display: none !important;
+}
+
+.react-calendar__navigation__label {
+  pointer-events: none;
+  height: 2rem;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-m);
+  color: var(--cod);
+  font-family: 'Sora', sans-serif;
+  background-color: var(--alabaster);
+}
+
+.react-calendar__navigation__arrow {
+  height: 2rem;
+  width: 2rem;
+  flex: unset;
+  border: var(--border-size) solid var(--silver);
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-m);
+  color: var(--cod);
+  font-family: 'Sora', sans-serif;
+  background-color: var(--alabaster);
+}
+
+.react-calendar__navigation__arrow:disabled, .react-calendar__tile:disabled {
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-m);
+  color: var(--chalice);
+  border: none;
+  cursor: not-allowed;
+  font-family: 'Sora', sans-serif;
+  background-color: var(--gallery);
+}
+
+.react-calendar__navigation__arrow:not(:disabled), .react-calendar__tile:not(:disabled) {
+  cursor: pointer;
+  border: var(--border-size) solid var(--silver);
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-m);
+  color: var(--cod);
+  font-family: 'Sora', sans-serif;
+  background-color: var(--alabaster);
+}
+
+.react-calendar__tile--active {
+  background-color: var(--christine) !important;
+  color: var(--white) !important;
+  border-color: var(--meteor) !important;
+  font-weight: 600;
+}
+
+.react-calendar__tile {
+  aspect-ratio: 1/1;
+  width: 3rem;
+  max-width: 64px;
+  flex: unset !important;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  width: 3rem;
+  max-width: 48px;
+  flex: unset !important;
+  display: flex;
+}
+
+.react-calendar__month-view__weekdays__weekday abbr {
+  font-size: var(--font-size-l);
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis "";
+  white-space: nowrap;
+}
+
+.react-calendar {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  align-items: center;
+  font-family: 'Sora', sans-serif;
+}
+
+.react-calendar__navigation, .react-calendar__month-view > div > div {
+  gap: var(--spacing-sm);
+  display: flex;
+}
+
+.react-calendar__month-view > div > div {
+  flex-direction: column;
+}
+
+.react-calendar__navigation, .react-calendar__viewContainer, .react-calendar__month-view__days {
+  max-width: calc(7 * 3rem + 6 * var(--spacing-sm));
+}
+
+.react-calendar__month-view__days, .react-calendar__month-view__weekdays {
+  display: grid !important;
+  grid-template-columns: repeat(7, 1fr);
+  gap: var(--spacing-sm);
+}
+
+@media screen and (max-width: 768px) {
+  .react-calendar__tile, .react-calendar__month-view__weekdays__weekday {
+    width: auto;
+  }
+  .react-calendar__navigation, .react-calendar__viewContainer, .react-calendar__month-view__days {
+    max-width: calc(calc(7 * 2.5rem) + calc(6 * var(--spacing-sm)));
+  }
+  .react-calendar__month-view__weekdays__weekday abbr {
+    max-width: 4ch;
+  }
+  .react-calendar__month-view__weekdays__weekday abbr {
+    font-size: var(--font-size-m);
+  }
+}

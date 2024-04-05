@@ -32,7 +32,7 @@
 .navbar-links a {
   text-decoration: none;
   color: var(--shaft);
-  transition: all 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .hamburger {
@@ -44,7 +44,7 @@
   justify-content: center;
   background-color: var(--alabaster);
   border-radius: var(--border-radius);
-  border: 0.05rem solid var(--gallery);
+  border: 0.05rem solid var(--silver);
 }
 
 .hamburger svg {
@@ -128,12 +128,12 @@
     background-color: var(--alabaster);
     padding: 0.25rem var(--spacing-sm);
     width: 6rem;
-    height: 2rem;
+    height: 2.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: var(--border-radius);
-    border: var(--border-size) solid var(--gallery);
+    border: var(--border-size) solid var(--silver);
   }
 
   .navbar-links a:hover {
@@ -146,5 +146,11 @@
     background-color: var(--christine);
     color: var(--white);
     border-color: var(--meteor);
+  }
+}
+
+@media screen and (min-width: 1440px){
+  .navbar-links a {
+    height: 2rem;
   }
 }

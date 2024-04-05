@@ -1,12 +1,14 @@
-import React from 'react';
 import './Services.css';
+import React, { useState } from 'react';
 import Translator from '../../i18n/Translator.js';
+import Reservation from '../../components/Reservation/Reservation.jsx';
 
-function ServicesCard({ titlePath, descriptionPath, statusPath, reservation, contact, className }) {
-  const CardElement = reservation ? 'a' : 'div';
+function ServicesCard({ titlePath, descriptionPath, statusPath, reservation, contact, className, openModal }) {
+  const CardElement = contact ? 'a' : reservation ? 'button' : 'div';
   return (
     <CardElement
-      href={contact ? 'tel:+351237777777' : reservation ? '#' : ''}
+      href={contact ? 'tel:+351237777777' : ''}
+      onClick={reservation ? openModal : null}
       className={`services-card ${statusPath ? 'unavailable' : ''} ${className}`}
     >
       <div className='services-card-header'>
@@ -20,8 +22,17 @@ function ServicesCard({ titlePath, descriptionPath, statusPath, reservation, con
   );
 }
 
-
 function Services() {
+  const [showModal, setShowModal] = useState(false);
+  
+  const openModal = () => {
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
+
   return (
     <div className='services-section'>
       <img className='services-cover'
@@ -33,6 +44,7 @@ function Services() {
         <ServicesCard
           titlePath='services.partner.title'
           descriptionPath='services.partner.description'
+          openModal={openModal}
         />
         <ServicesCard
           titlePath='services.delivery.title'
@@ -44,15 +56,16 @@ function Services() {
           descriptionPath='services.reservation.description'
           reservation={true}
           className='reservation-card'
+          openModal={openModal}
         />
         <ServicesCard
           titlePath='services.takeaway.title'
           descriptionPath='services.takeaway.description'
-          reservation={true}
           contact={true}
           className='contact-card'
         />
       </div>
+      {showModal && <Reservation closeModal={closeModal} />}
     </div>
   );
 }

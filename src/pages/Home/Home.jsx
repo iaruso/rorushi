@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Home.css';
 import Translator from '../../i18n/Translator.js';
 import Banner from '../../components/Banner/Banner.jsx';
+import Reservation from '../../components/Reservation/Reservation.jsx';
 
 const PricingCard = ({ titlePath, pricePath, timePath, drinksPath, agePath, detailsPath }) => (
   <div className='home-pricing-card'>
@@ -26,6 +27,14 @@ const DetailsCard = ({ titlePath, descriptionPath }) => (
 );
 
 function Home(){
+  const [showModal, setShowModal] = useState(false);
+  const openModal = () => {
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
   return (
     <div className='home-section'>
       <img className='home-cover' 
@@ -79,8 +88,9 @@ function Home(){
         </div>
       </div>
       <div className='home-contact'>
-        <a href='#'><Translator path='home.reservation'/></a>
+        <button onClick={() => openModal()}><Translator path='home.reservation'/></button>
       </div>
+      {showModal && <Reservation closeModal={closeModal} />}
     </div>
   );
 }

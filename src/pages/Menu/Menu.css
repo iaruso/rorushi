@@ -14,12 +14,12 @@
 
 .menu-filters input[type="text"] {
   padding: var(--spacing-sm) var(--spacing);
-  border: solid var(--border-size) var(--gallery);
+  border: solid var(--border-size) var(--silver);
   border-radius: var(--border-radius);
   font-size: var(--font-size-m);
   outline: none;
   flex: 1;
-  height: 2.5rem;
+  height: 100%;
   font-family: 'Sora', sans-serif;
   font-weight: 500;
   transition: background-color 0.2s ease-in-out;
@@ -30,7 +30,7 @@
 }
 
 .menu-filters .react-dropdown-select {
-  border: solid var(--border-size) var(--gallery) !important;
+  border: solid var(--border-size) var(--silver) !important;
   border-radius: var(--border-radius);
   background-color: white;
   outline: none;
@@ -45,11 +45,11 @@
 
 .menu-filters .react-dropdown-select:hover {
   background-color: var(--alabaster);
-  border-color: var(--gallery);
+  border-color: var(--chalice);
 }
 
 .menu-filters .react-dropdown-select-dropdown {
-  border: solid var(--border-size) var(--gallery);
+  border: solid var(--border-size) var(--silver);
   border-radius: var(--border-radius);
   background-color: white;
   outline: none;
@@ -58,11 +58,15 @@
   width: fit-content;
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-sm);
   right: 0;
   left: unset !important;
   min-width: 8rem;
-  
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.menu-filters .react-dropdown-select-dropdown::-webkit-scrollbar {
+  display: none;
 }
 
 .menu-filters .react-dropdown-select-dropdown span {
@@ -97,7 +101,7 @@
   gap: var(--spacing);
   align-items: center;
   background-color: var(--white);
-  border: solid var(--border-size) var(--gallery);
+  border: solid var(--border-size) var(--silver);
   justify-content: space-between;
   height: 10rem;
   border-radius: var(--border-radius);

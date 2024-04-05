@@ -10,7 +10,16 @@ export default {
 			description: 'Discover the essence of traditional sushi at Rorushi. Immerse yourself in the art of Japanese culinary mastery with our authentic and carefully crafted rolls. Delight your taste buds with the purity of flavors and the freshest ingredients. Experience the timeless elegance of sushi at Rorushi, where tradition comes alive in every bite.',
 		},
     banner: `Get 20% off your online reservation until ${formattedDate}.`,
-    nav: {
+    reservation: {
+			title: 'On {{month}} {{day}}',
+			person: 'person',
+			people: 'people',
+			time: 'Time',
+			number: 'Guests',
+			book: 'Book now',
+			cancel: 'Cancel'
+		},
+		nav: {
       home: 'Home',
       menu: 'Menu',
       services: 'Services',
