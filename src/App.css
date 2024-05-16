@@ -29,7 +29,6 @@
   box-sizing: border-box;
   -webkit-user-drag: none;
   -ms-user-drag: none;
-  -user-drag: none;
 }
 
 ::-moz-selection, ::selection {
@@ -101,9 +100,6 @@ body {
   ::-webkit-scrollbar {
     display: none;
   }
-  * {
-    scrollbar-color: transparent transparent;
-  }
 }
 
 @media screen and (min-width: 1921px) {
@@ -154,6 +150,10 @@ body {
 
   #root > footer {
     display: none;
+  }
+  
+  * {
+    scrollbar-color: transparent transparent;
   }
 }
 

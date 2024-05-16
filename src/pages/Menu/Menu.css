@@ -89,7 +89,7 @@
 
 .menu-options {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(0, calc(50% - var(--spacing) * 0.5)));
+  grid-template-columns: repeat(2, 1fr); 
   gap: var(--spacing);
   overflow-y: auto;
   width: 100%;
