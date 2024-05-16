@@ -6,7 +6,6 @@
   --letter-spacing: 0.1rem;
   --letter-spacing-sm: 0.05rem;
   /* Colors */
-  
   --cod: #1A1A1A;
   --shaft: #3C3C3C;
   --chalice: #AAAAAA;
@@ -14,7 +13,6 @@
   --gallery: #EEEEEE;
   --alabaster: #FCFCFC;
   --white: #FFFFFF;
-
   --christine: #F5640B;
   --meteor: #CE5205;
   /* Font sizes */
@@ -29,6 +27,22 @@
 
 * {
   box-sizing: border-box;
+  -webkit-user-drag: none;
+  -ms-user-drag: none;
+  -user-drag: none;
+}
+
+::-moz-selection, ::selection {
+  background-color: var(--christine);
+  color: var(--white);
+}
+
+img {
+  pointer-events: none;
+}
+
+img::selection {
+  background-color: transparent;
 }
 
 body {
@@ -55,6 +69,25 @@ body {
   height: calc(100vh - 12rem);
 }
 
+/* Scrollbar styles */
+/* WebKit (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--chalice);
+}
+
+/* Firefox */
+* {
+  scrollbar-color: var(--chalice) transparent;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
 @keyframes image-color {
   0% {
     filter: grayscale(1);
@@ -64,9 +97,12 @@ body {
   }
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
   ::-webkit-scrollbar {
     display: none;
+  }
+  * {
+    scrollbar-color: transparent transparent;
   }
 }
 
