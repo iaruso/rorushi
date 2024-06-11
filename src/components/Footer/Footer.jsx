@@ -12,7 +12,7 @@ const Footer = ({ toggleMenu }) => {
   }, [i18n.language]);
   
   const toggleLanguage = () => {
-    const newLanguage = language === 'en-US' ? 'pt-PT' : 'en-US';
+    const newLanguage = language === 'en' ? 'pt' : 'en';
     i18n.changeLanguage(newLanguage);
     setLanguage(newLanguage);
     
@@ -34,7 +34,7 @@ const Footer = ({ toggleMenu }) => {
     <footer className='footer'>
       <div className='footer-language'>
         <span onClick={toggleLanguage}>
-          {language === 'en-US' ? 'English' : 'Português'}
+          {language === 'en' ? 'English' : 'Português'}
         </span>
       </div>
       <div className='footer-social-media'>
